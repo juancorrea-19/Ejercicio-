@@ -37,24 +37,11 @@ class dinero:
        self.cantidaddeaños = self.añosl*self.cantidadN 
        print("la cantidad que resive en su carrera  es :",self.cantidaddeaños) 
        
-    def valor_pasaje(self): 
-        self.transporte= (self.cantidadN*20)/100
-        print("la cantidad destinada para transporte  es :",self.transporte )
-        print("numero de boletos que puede comprar:",self.transporte/self.pasaje)
-        
-    def valor_cine(self):
-         self.boletos= (self.cantidadN*20)/100
-         print("la cantidad destinada para las boletas delcine es :",self.boletos )
-         print("numero de boletos que puede comprar:",self.boletos/self.cine)
-        
-        
+       
          
             
-            
-            
-            
                
-entrega1= dinero(1000000,200,300)
+entrega1= dinero(1000000,5)
 
 entrega1.calcular_libros()
 
@@ -64,14 +51,4 @@ entrega1.calcular_boletoscine()
 
 entrega1.calcular_DMadre ()
 
-entrega1.valor_pasaje ()
-
-entrega1.valor_cine ()
-
-
-       
-       
-         
-            
-               
-
+entrega1.calcular_dinero ()
