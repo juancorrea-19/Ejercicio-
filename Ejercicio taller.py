@@ -1,12 +1,14 @@
 class dinero:
     
-    def _init_(self, cantidadN,):
+    def __init__(self, cantidadN,años,pasaje ):
         self.cantidadN = cantidadN
         self.libros = 0
         self.boletos = 0
         self.diaMadre = 0
         self.transporte  = 0
-       
+        self.cantidaddeaños=0
+        self.añosl=años 
+        self.pasaje=pasaje
         
     def calcular_libros (self):
         self.libros= (self.cantidadN*50)/100
@@ -29,12 +31,17 @@ class dinero:
          self.diaMadre= (self.cantidadN-(self.boletos + self.transporte + self.libros ))
          print("la cantidad destinada para el dia de la madre  es :",self.diaMadre) 
          
+
+    def calcular_dinero (self):      
             
-            
-            
+       self.cantidaddeaños = self.añosl*self.cantidadN 
+       print("la cantidad que resive en su carrera  es :",self.cantidaddeaños) 
+       
+       
+         
             
                
-entrega1= dinero(1000000)
+entrega1= dinero(1000000,5)
 
 entrega1.calcular_libros()
 
@@ -43,3 +50,5 @@ entrega1.calcular_transporte()
 entrega1.calcular_boletoscine()
 
 entrega1.calcular_DMadre ()
+
+entrega1.calcular_dinero ()
